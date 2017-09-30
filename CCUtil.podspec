@@ -10,9 +10,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.source_files = "*.{h,m}"
   s.requires_arc = true
-
-  s.subspec 'NSFoundation' do |foundation|
-      foundation.source_files = 'NSFoundation/*.{h,m,c}'
-  end
-
+  s.source_files = '*.{h,m,c}'
+  s.public_header_files = '*.{h}'
 end
